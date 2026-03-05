@@ -1,9 +1,17 @@
-.main {
+.amazon-page .main {
   margin-top: 60px;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.products-grid {
+.amazon-page .products-grid {
   display: grid;
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 1px solid rgb(231, 231, 231);
 
   /* - In CSS Grid, 1fr means a column will take up the
        remaining space in the grid.
@@ -22,7 +30,7 @@
    means when the screen width is 2000px or less, we
    will divide the grid into 7 columns instead of 8. */
 @media (max-width: 2000px) {
-  .products-grid {
+  .amazon-page .products-grid {
     grid-template-columns: repeat(7, 1fr);
   }
 }
@@ -30,42 +38,42 @@
 /* This @media means when the screen width is 1600px or
    less, we will divide the grid into 6 columns. */
 @media (max-width: 1600px) {
-  .products-grid {
+  .amazon-page .products-grid {
     grid-template-columns: repeat(6, 1fr);
   }
 }
 
 @media (max-width: 1300px) {
-  .products-grid {
+  .amazon-page .products-grid {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (max-width: 1000px) {
-  .products-grid {
+  .amazon-page .products-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 800px) {
-  .products-grid {
+  .amazon-page .products-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 575px) {
-  .products-grid {
+  .amazon-page .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 450px) {
-  .products-grid {
+  .amazon-page .products-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.product-container {
+.amazon-page .product-container {
   padding-top: 40px;
   padding-bottom: 25px;
   padding-left: 25px;
@@ -78,7 +86,7 @@
   flex-direction: column;
 }
 
-.product-image-container {
+.amazon-page .product-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +95,7 @@
   margin-bottom: 20px;
 }
 
-.product-image {
+.amazon-page .product-image {
   /* Images will overflow their container by default. To
     prevent this, we set max-width and max-height to 100%
     so they stay inside their container. */
@@ -95,42 +103,42 @@
   max-height: 100%;
 }
 
-.product-name {
+.amazon-page .product-name {
   height: 40px;
   margin-bottom: 5px;
 }
 
-.product-rating-container {
+.amazon-page .product-rating-container {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.product-rating-stars {
+.amazon-page .product-rating-stars {
   width: 100px;
   margin-right: 6px;
 }
 
-.product-rating-count {
+.amazon-page .product-rating-count {
   color: rgb(1, 124, 182);
   cursor: pointer;
   margin-top: 3px;
 }
 
-.product-price {
+.amazon-page .product-price {
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.product-quantity-container {
+.amazon-page .product-quantity-container {
   margin-bottom: 17px;
 }
 
-.product-spacer {
+.amazon-page .product-spacer {
   flex: 1;
 }
 
-.added-to-cart {
+.amazon-page .added-to-cart {
   color: rgb(6, 125, 98);
   font-size: 16px;
 
@@ -144,12 +152,12 @@
   opacity: 0;
 }
 
-.added-to-cart img {
+.amazon-page .added-to-cart img {
   height: 20px;
   margin-right: 5px;
 }
 
-.add-to-cart-button {
+.amazon-page .add-to-cart-button {
   width: 100%;
   padding: 8px;
   border-radius: 50px;

@@ -1,4 +1,4 @@
-import {formatCurrency} from '../scripts/utils/money.js';
+import { formatCurrency } from '../utils/money.js';
 export function getProduct(productId){
   let matchingProduct;
       products.forEach((product)=> {
@@ -17,6 +17,8 @@ class Product {
   name;
   rating;
   priceCents;
+  keywords;
+  type;
 
  constructor(productDetails){
    this.id= productDetails.id;
@@ -24,6 +26,8 @@ class Product {
    this.name = productDetails.name;
    this.rating = productDetails.rating;
    this.priceCents = productDetails.priceCents;
+   this.keywords = Array.isArray(productDetails.keywords) ? productDetails.keywords : [];
+   this.type = productDetails.type || 'product';
 
  }
 
@@ -781,5 +785,3 @@ export const products = [
   return new Product(productDetails);
 });
 */
-
-
