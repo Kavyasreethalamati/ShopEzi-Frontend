@@ -98,7 +98,7 @@ export default function HomePage() {
             className="added-to-cart"
             style={{ opacity: addedState[product.id] ? 1 : 0 }}
           >
-            <img src="images/icons/checkmark.png" />
+            <img src="/images/icons/checkmark.png" />
             Added
           </div>
 

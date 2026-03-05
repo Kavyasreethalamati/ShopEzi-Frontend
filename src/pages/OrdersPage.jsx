@@ -76,7 +76,7 @@ export default function OrdersPage() {
                             setCartQuantity(getCartQuantity());
                           }}
                         >
-                          <img className="buy-again-icon" src="images/icons/buy-again.png" />
+                          <img className="buy-again-icon" src="/images/icons/buy-again.png" />
                           <span className="buy-again-message">Buy it again</span>
                         </button>
                       </div>

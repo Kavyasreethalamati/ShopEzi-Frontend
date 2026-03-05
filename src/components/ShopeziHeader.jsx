@@ -11,10 +11,10 @@ export default function ShopeziHeader({
     <div className="shopezi-header">
       <div className="shopezi-header-left-section">
         <Link to="/" className="header-link" onClick={onLogoClick}>
-          <img className="shopezi-logo" src="images/icons/shopezi.png" />
+          <img className="shopezi-logo" src="/images/icons/shopezi.png" />
           <img
             className="shopezi-mobile-logo"
-            src="images/icons/shopezi.png"
+            src="/images/icons/shopezi.png"
           />
         </Link>
       </div>
@@ -41,7 +41,7 @@ export default function ShopeziHeader({
             }}
           />
           <button className="search-button" type="submit">
-            <img className="search-icon" src="images/icons/search-icon.png" />
+            <img className="search-icon" src="/images/icons/search-icon.png" />
           </button>
         </form>
       </div>
@@ -53,7 +53,7 @@ export default function ShopeziHeader({
         </Link>
 
         <Link className="cart-link header-link" to="/checkout">
-          <img className="cart-icon" src="images/icons/cart-icon.png" />
+          <img className="cart-icon" src="/images/icons/cart-icon.png" />
           <div className="cart-quantity">{cartQuantity}</div>
           <div className="cart-text">Cart</div>
         </Link>

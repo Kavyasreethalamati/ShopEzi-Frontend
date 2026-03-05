@@ -1,4 +1,20 @@
 import { formatCurrency } from '../utils/money.js';
+
+function normalizeAssetPath(path) {
+  if (!path) {
+    return path;
+  }
+  if (
+    path.startsWith('/') ||
+    path.startsWith('http://') ||
+    path.startsWith('https://') ||
+    path.startsWith('data:')
+  ) {
+    return path;
+  }
+  return `/${path}`;
+}
+
 export function getProduct(productId){
   let matchingProduct;
       products.forEach((product)=> {
@@ -22,7 +38,7 @@ class Product {
 
  constructor(productDetails){
    this.id= productDetails.id;
-   this.image = productDetails.image;
+   this.image = normalizeAssetPath(productDetails.image);
    this.name = productDetails.name;
    this.rating = productDetails.rating;
    this.priceCents = productDetails.priceCents;
@@ -32,7 +48,7 @@ class Product {
  }
 
  getStarsUrl(){
-  return `images/ratings/rating-${this.rating.stars * 10}.png`
+  return `/images/ratings/rating-${this.rating.stars * 10}.png`;
  }
 
  getPrice(){
@@ -49,7 +65,7 @@ class Clothing extends Product{
 
      constructor(productDetails){
       super(productDetails);
-      this.sizeChartLink = productDetails.sizeChartLink ;
+      this.sizeChartLink = normalizeAssetPath(productDetails.sizeChartLink);
      }
 
      extraInforHTML() {

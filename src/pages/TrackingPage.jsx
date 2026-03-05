@@ -52,7 +52,7 @@ export default function TrackingPage() {
 
           <img
             className="product-image"
-            src={productsLoaded && product ? product.image : 'images/products/athletic-cotton-socks-6-pairs.jpg'}
+            src={productsLoaded && product ? product.image : '/images/products/athletic-cotton-socks-6-pairs.jpg'}
           />
 
           <div className="progress-labels-container">
