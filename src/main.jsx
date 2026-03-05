@@ -4,8 +4,8 @@ import { HashRouter } from 'react-router-dom';
 import App from './App.jsx';
 
 import '../styles/shared/general.css';
-import '../styles/shared/amazon-header.css';
-import '../styles/pages/amazon.css';
+import '../styles/shared/shopezi-header.css';
+import '../styles/pages/shopezi.css';
 import '../styles/pages/orders.css';
 import '../styles/pages/tracking.css';
 import '../styles/pages/checkout/checkout-header.css';

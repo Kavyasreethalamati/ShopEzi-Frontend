@@ -6,8 +6,8 @@ export default function CheckoutHeader({ itemCount }) {
       <div className="header-content">
         <div className="checkout-header-left-section">
           <Link to="/">
-            <img className="amazon-logo" src="images/amazon-logo.png" />
-            <img className="amazon-mobile-logo" src="images/amazon-mobile-logo.png" />
+            <img className="shopezi-logo" src="images/icons/shopezi.png" />
+            <img className="shopezi-mobile-logo" src="images/icons/shopezi.png" />
           </Link>
         </div>
 

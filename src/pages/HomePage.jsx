@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import AmazonHeader from '../components/AmazonHeader.jsx';
+import ShopeziHeader from '../components/ShopeziHeader.jsx';
 import { addToCart, cart, loadFromStorage } from '../lib/data/cart.js';
 import { loadProductsFetch, products } from '../lib/data/products.js';
 
@@ -112,8 +112,8 @@ export default function HomePage() {
       ));
 
   return (
-    <div className="amazon-page">
-      <AmazonHeader
+    <div className="shopezi-page">
+      <ShopeziHeader
         cartQuantity={cartQuantity}
         searchValue={searchInput}
         onSearchValueChange={setSearchInput}

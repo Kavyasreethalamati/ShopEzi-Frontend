@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function AmazonHeader({
+export default function ShopeziHeader({
   cartQuantity = 0,
   searchValue = '',
   onSearchValueChange,
@@ -8,18 +8,18 @@ export default function AmazonHeader({
   onLogoClick
 }) {
   return (
-    <div className="amazon-header">
-      <div className="amazon-header-left-section">
+    <div className="shopezi-header">
+      <div className="shopezi-header-left-section">
         <Link to="/" className="header-link" onClick={onLogoClick}>
-          <img className="amazon-logo" src="images/amazon-logo-white.png" />
+          <img className="shopezi-logo" src="images/icons/shopezi.png" />
           <img
-            className="amazon-mobile-logo"
-            src="images/amazon-mobile-logo-white.png"
+            className="shopezi-mobile-logo"
+            src="images/icons/shopezi.png"
           />
         </Link>
       </div>
 
-      <div className="amazon-header-middle-section">
+      <div className="shopezi-header-middle-section">
         <form
           style={{ display: 'contents' }}
           onSubmit={(event) => {
@@ -46,7 +46,7 @@ export default function AmazonHeader({
         </form>
       </div>
 
-      <div className="amazon-header-right-section">
+      <div className="shopezi-header-right-section">
         <Link className="orders-link header-link" to="/orders">
           <span className="returns-text">Returns</span>
           <span className="orders-text">&amp; Orders</span>

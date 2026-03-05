@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import AmazonHeader from '../components/AmazonHeader.jsx';
+import ShopeziHeader from '../components/ShopeziHeader.jsx';
 import { cart } from '../lib/data/cart.js';
 import { orders } from '../lib/data/orders.js';
 import { getProduct, loadProductsFetch } from '../lib/data/products.js';
@@ -35,7 +35,7 @@ export default function TrackingPage() {
 
   return (
     <>
-      <AmazonHeader cartQuantity={getCartQuantity()} />
+      <ShopeziHeader cartQuantity={getCartQuantity()} />
       <div className="main">
         <div className="order-tracking">
           <Link className="back-to-orders-link link-primary" to="/orders">

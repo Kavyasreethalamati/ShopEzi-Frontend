@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import dayjs from 'dayjs';
 import { Link } from 'react-router-dom';
-import AmazonHeader from '../components/AmazonHeader.jsx';
+import ShopeziHeader from '../components/ShopeziHeader.jsx';
 import { addToCart, cart } from '../lib/data/cart.js';
 import { orders } from '../lib/data/orders.js';
 import { formatCurrency } from '../lib/utils/money.js';
@@ -23,7 +23,7 @@ export default function OrdersPage() {
 
   return (
     <>
-      <AmazonHeader cartQuantity={cartQuantity} />
+      <ShopeziHeader cartQuantity={cartQuantity} />
       <div className="main">
         <div className="page-title">Your Orders</div>
 
